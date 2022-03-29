@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <title>Date Meet</title>
+
+    </head>
+
+
+    <body>
+
+        <div class="app_name">
+            <header class="app_name_header">
+                <h1>Date Meet</h1>
+            </header>
+        </div>
+
+
+        <!-- If you change nav bar remember to change on every other page-->
+        <nav>
+            <ul class="nav_bar">
+                <li class="nav_bar_li"><a href="main.html" class="nav_bar_li_a">Home</a></li>
+                <li class="nav_bar_li"><a href="how_it_works.html" class="nav_bar_li_a">How It Works</a></li>
+                <li class="nav_bar_li"><a href="submit_request.html" class="nav_bar_li_a">Submit Request</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Don't know where to go for your next date? We've got you covered</h2>
+
+
+            <div class="search_div">
+                <form>
+
+                    <label for="location" class="required_field">Your Address:</label>
+                    <input type="text" id="location" required><br><br>
+
+                    <label for="range" class="required_field">Range (km):</label>
+                    <input type="range" id="range" value="10" min="0" max="100"
+                    oninput="this.nextElementSibling.value = this.value">
+                    <output>10</output>km<br><br>
+                
+                </form>
+            </div>
+
+            <div class="map">
+                * This is where the map will go *
+            </div>
+
+        </main>
+
+
+    </body>
+
+</html>
